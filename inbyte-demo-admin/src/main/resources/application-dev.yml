@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/dev?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+    userName: dev
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+
+aliyun:
+  oss:
+    endpoint: oss-cn-hangzhou.aliyuncs.com
+    AccessKeyId: xxx
+    accessKeySecret: xxx
+    host: https://demo.oss-cn-hangzhou.aliyuncs.com
+    bucket: demo
+    callbackUrl: https://demo.inbyt.cc/api/aliyun/oss/callback
