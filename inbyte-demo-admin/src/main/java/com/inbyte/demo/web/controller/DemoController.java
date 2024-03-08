@@ -74,10 +74,10 @@ public class DemoController {
      * 列表
      *
      * @param query
-     * @return R<Page<List<DemoBrief>>>
+     * @return R<Page<DemoBrief>>>
      **/
     @GetMapping
-    public R<Page<List<DemoBrief>>> list(@ModelAttribute @Valid DemoQuery query) {
+    public R<Page<DemoBrief>> list(@ModelAttribute @Valid DemoQuery query) {
         return demoService.list(query);
     }
 }

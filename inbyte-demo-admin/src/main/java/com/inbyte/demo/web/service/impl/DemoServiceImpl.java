@@ -75,7 +75,7 @@ public class DemoServiceImpl implements DemoService {
     }
 
     @Override
-    public R<Page<List<DemoBrief>>> list(DemoQuery query) {
+    public R<Page<DemoBrief>> list(DemoQuery query) {
         if (query.getEndDate() != null) {
             query.setEndDate(query.getEndDate().plusDays(1));
         }

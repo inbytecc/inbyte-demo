@@ -52,7 +52,7 @@ public interface DemoService {
      * 列表
      *
      * @param query
-     * @return R<Page<List<DemoBrief>>>
+     * @return R<Page<DemoBrief>>>
      **/
-    R<Page<List<DemoBrief>>> list(DemoQuery query);
+    R<Page<DemoBrief>> list(DemoQuery query);
 }
