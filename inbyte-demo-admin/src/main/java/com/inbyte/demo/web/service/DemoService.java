@@ -2,11 +2,10 @@ package com.inbyte.demo.web.service;
 import com.inbyte.commons.model.dto.Page;
 import com.inbyte.commons.model.dto.R;
 import com.inbyte.demo.web.model.demo.DemoQuery;
-import com.inbyte.demo.web.model.demo.DemoInsert;
+import com.inbyte.demo.web.model.demo.DemoCreate;
 import com.inbyte.demo.web.model.demo.DemoUpdate;
 import com.inbyte.demo.web.model.demo.DemoBrief;
 import com.inbyte.demo.web.model.demo.DemoDetail;
-import java.util.List;
 
 /**
  * 演示服务
@@ -19,10 +18,10 @@ public interface DemoService {
     /**
      * 新增
      *
-     * @param insert
+     * @param create
      * @return R
      **/
-    R insert(DemoInsert insert);
+    R create(DemoCreate create);
 
     /**
      * 删除

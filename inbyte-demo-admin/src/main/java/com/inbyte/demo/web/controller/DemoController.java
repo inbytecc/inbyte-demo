@@ -3,7 +3,7 @@ import com.inbyte.commons.model.dto.Page;
 import com.inbyte.commons.model.dto.R;
 import com.inbyte.demo.web.model.demo.DemoQuery;
 import com.inbyte.demo.web.model.demo.DemoUpdate;
-import com.inbyte.demo.web.model.demo.DemoInsert;
+import com.inbyte.demo.web.model.demo.DemoCreate;
 import com.inbyte.demo.web.model.demo.DemoBrief;
 import com.inbyte.demo.web.model.demo.DemoDetail;
 import com.inbyte.demo.web.service.DemoService;
@@ -11,7 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import jakarta.validation.Valid;
-import java.util.List;
 
 /**
  * 演示
@@ -29,12 +28,12 @@ public class DemoController {
     /**
      * 新增
      *
-     * @param insert
+     * @param create
      * @return R
      **/
     @PostMapping
-    public R insert(@RequestBody @Valid DemoInsert insert) {
-        return demoService.insert(insert);
+    public R create(@RequestBody @Valid DemoCreate create) {
+        return demoService.create(create);
     }
 
     /**

@@ -1,3 +1,8 @@
+# 开发环境
+inbyte:
+  app:
+    server: https://d-demo.inbyte.cc
+
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/dev?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true

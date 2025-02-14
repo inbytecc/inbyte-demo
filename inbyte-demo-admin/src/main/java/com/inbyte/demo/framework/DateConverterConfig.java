@@ -41,38 +41,4 @@ public class DateConverterConfig {
         };
     }
 
-//    private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-//    //    @Value("${spring.jackson.date-format:yyyy-MM-dd HH:mm:ss}")
-//    @Bean
-//    public Converter<String, LocalDateTime> localDateTimeConverter() {
-//        // 使用 lambda 启动会报错
-//        return new Converter<String, LocalDateTime>() {
-//            @Override
-//            public LocalDateTime convert(String source) {
-//                return StringUtil.isEmpty(source) ? null : LocalDateTime.parse(source, FORMATTER);
-//            }
-//        };
-//    }
-//
-//    @Bean
-//    public Converter<String, LocalDate> localDateConverter() {
-//        // 使用 lambda 启动会报错
-//        return new Converter<String, LocalDate>() {
-//            @Override
-//            public LocalDate convert(String source) {
-//                return StringUtil.isEmpty(source) ? null : LocalDate.parse(source);
-//            }
-//        };
-//    }
-//
-//
-//    @Bean
-//    public LocalDateTimeSerializer localDateTimeDeserializer() {
-//        return new LocalDateTimeSerializer(DateTimeFormatter.ofPattern(pattern));
-//    }
-//
-//    @Bean
-//    public Jackson2ObjectMapperBuilderCustomizer jackson2ObjectMapperBuilderCustomizer() {
-//        return builder -> builder.serializerByType(LocalDateTime.class, localDateTimeDeserializer());
-//    }
 }

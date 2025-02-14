@@ -3,7 +3,6 @@ package com.inbyte.demo.web.model.demo;
 import lombok.Getter;
 import lombok.Setter;
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
 
 import org.hibernate.validator.constraints.Length;
 import jakarta.validation.constraints.NotNull;
@@ -17,7 +16,7 @@ import com.alibaba.fastjson2.JSONArray;
  **/
 @Getter
 @Setter
-public class DemoInsert {
+public class DemoCreate {
 
     /** 名字 */
     @NotNull(message = "名字不能为空")

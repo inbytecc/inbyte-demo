@@ -9,7 +9,7 @@ import com.inbyte.demo.web.dao.DemoMapper;
 import com.inbyte.demo.web.service.DemoService;
 import com.inbyte.demo.web.model.demo.DemoPo;
 import com.inbyte.demo.web.model.demo.DemoQuery;
-import com.inbyte.demo.web.model.demo.DemoInsert;
+import com.inbyte.demo.web.model.demo.DemoCreate;
 import com.inbyte.demo.web.model.demo.DemoUpdate;
 import com.inbyte.demo.web.model.demo.DemoBrief;
 import com.inbyte.demo.web.model.demo.DemoDetail;
@@ -19,7 +19,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 /**
  * 演示服务
@@ -34,14 +33,14 @@ public class DemoServiceImpl implements DemoService {
     private DemoMapper demoMapper;
 
     @Override
-    public R insert(DemoInsert insert) {
+    public R create(DemoCreate create) {
         DemoPo demoPo = DemoPo.builder()
                 //.mctNo(SessionUtil.getDefaultMctNo())
                 .createTime(LocalDateTime.now())
                 .createUserId(SessionUtil.getUserId())
                 .createUserName(SessionUtil.getUserName())
                 .build();
-        BeanUtils.copyProperties(insert, demoPo);
+        BeanUtils.copyProperties(create, demoPo);
         demoMapper.insert(demoPo);
         return R.ok("新增成功");
     }

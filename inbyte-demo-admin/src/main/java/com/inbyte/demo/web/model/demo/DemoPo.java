@@ -26,7 +26,7 @@ public class DemoPo {
     /**
       * 演示ID
       */
-    @TableId(value = "demoId", type = IdType.AUTO)
+    @TableId(value = "demo_id", type = IdType.AUTO)
     private Integer demoId;
 
     /**

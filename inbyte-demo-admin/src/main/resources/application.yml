@@ -11,7 +11,7 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
 
 server:
-  port: 8080
+  port: 8081
   tomcat:
     uri-encoding: UTF-8
   servlet:
@@ -25,3 +25,12 @@ pagehelper:
   helper-dialect: mysql
   support-methods-arguments: true
   page-size-zero: false
+wx:
+  miniapp:
+    enabled: true
+    configs:
+      - appid: xx
+        secret: xxx
+        token:
+        aesKey:
+        msgDataFormat: JSON
